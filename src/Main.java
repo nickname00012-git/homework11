@@ -70,7 +70,6 @@ public class Main {
         }
         return leap;
     }
-
     public static void checkDevice(int clientOS, int clientDeviceYear) {
         int currentYear = LocalDate.now().getYear();
         if (clientOS == 0 && clientDeviceYear < currentYear) {
@@ -85,7 +84,6 @@ public class Main {
     }
 
     public static void checkDistance(int deliveryDistance) {
-
         if (deliveryDistance > 100) {
             System.out.println("Свыше 100 км доставка не осуществляется.");
         } else if (deliveryDistance <= 20) {
@@ -96,6 +94,5 @@ public class Main {
             System.out.println("Потребуется дней: 3");
         }
     }
-
 }
 
